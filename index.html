@@ -1,1 +1,294 @@
-<html><head><title>Budiyono</title></head><body>Portofolio</body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budi Yono - Guru Informatika & SaaS Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans selection:bg-indigo-500 selection:text-white">
+
+  <!-- Header / Hero Section -->
+  <header class="relative bg-slate-900 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.15),transparent_60%)]"></div>
+    <div class="max-w-6xl mx-auto px-6 py-20 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+      <div class="space-y-6 max-w-2xl text-center md:text-left">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+          📍 Sidoarjo, Indonesia
+        </span>
+        <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-none">
+          Budi Yono <span class="text-indigo-400 font-medium text-2xl md:text-3xl block mt-2">Guru Informatika & SaaS Developer</span>
+        </h1>
+        <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+          Pendidik aktif mata pelajaran Informatika yang mendedikasikan waktu untuk merancang dan mendeploy produk SaaS praktis penunjang produktivitas guru, kepatuhan pajak, dan UMKM di Indonesia.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+          <a href="#portfolio" class="bg-indigo-600 hover:bg-indigo-500 px-6 py-3 rounded-lg text-sm font-semibold transition shadow-md shadow-indigo-600/15">
+            Lihat Portofolio SaaS
+          </a>
+          <a href="#jadwal" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 px-6 py-3 rounded-lg text-sm font-semibold transition">
+            Jadwal Mengajar
+          </a>
+        </div>
+      </div>
+      
+      <!-- Profile/Visual Placeholder -->
+      <div class="relative w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+        <div class="absolute inset-0 bg-gradient-to-tr from-indigo-600 to-violet-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+        <div class="w-full h-full rounded-full border-4 border-slate-800 bg-slate-950 flex flex-col items-center justify-center p-8 relative overflow-hidden text-center">
+          <span class="text-5xl">👨‍🏫</span>
+          <span class="text-xs font-mono text-slate-400 mt-3 tracking-widest uppercase">masbudiyono</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar (Sticky) -->
+  <nav class="sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-lg font-bold tracking-tight text-slate-900">Budi Yono</a>
+      <div class="flex items-center space-x-6 text-sm font-semibold text-slate-600">
+        <a href="#profil" class="hover:text-indigo-600 transition">Profil</a>
+        <a href="#portfolio" class="hover:text-indigo-600 transition">Portofolio</a>
+        <a href="#jadwal" class="hover:text-indigo-600 transition">Mengajar</a>
+        <a href="#kontak" class="hover:text-indigo-600 transition">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content Container -->
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-20">
+
+    <!-- Profil Section -->
+    <section id="profil" class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+      <div class="md:col-span-1 border-l-4 border-indigo-600 pl-4">
+        <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">Profil Profesional</h2>
+        <p class="text-sm text-slate-500 mt-1">Latar belakang & filosofi kerja.</p>
+      </div>
+      <div class="md:col-span-2 space-y-4 text-slate-600 leading-relaxed text-sm md:text-base">
+        <p>
+          Sebagai guru Informatika, saya berprinsip bahwa pemrograman dan rekayasa perangkat lunak tidak hanya teori di atas kertas. Nilai terbaik ditunjukkan dari karya nyata yang dapat menyelesaikan permasalahan sehari-hari.
+        </p>
+        <p>
+          Selain mengajar kelas VII dan VIII, saya aktif mengembangkan dan mendeploy berbagai aplikasi SaaS terdistribusi. Fokus utama saya adalah pengolahan data, integrasi Payment Gateway lokal (Swing5D), kalkulator regulasi, dan alat bantu pendidikan.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="space-y-8">
+      <div class="border-l-4 border-indigo-600 pl-4">
+        <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">Portofolio Produk SaaS</h2>
+        <p class="text-sm text-slate-500 mt-1">Daftar produk SaaS aktif yang saya bangun dan deploy secara mandiri.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- SellerTax -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col justify-between hover:border-indigo-300 hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded uppercase">Pajak E-Commerce</span>
+              <span class="text-xs font-semibold text-slate-400">Port: 5018</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">SellerTax 📊</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+              Platform SaaS otomatisasi rekonsiliasi potongan pajak e-commerce (PMK 37/2025) & generator laporan siap unggah ke sistem CoreTax DJP.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
+            <span class="text-xs font-semibold text-emerald-600">Integrasi Swing5D</span>
+            <a href="https://sellertax.provider.my.id" target="_blank" class="text-indigo-600 hover:text-indigo-500 text-xs font-bold transition">Kunjungi Situs →</a>
+          </div>
+        </div>
+
+        <!-- HalalTrace -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col justify-between hover:border-indigo-300 hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded uppercase">Sertifikasi Halal</span>
+              <span class="text-xs font-semibold text-slate-400">Port: 5017</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">HalalTrace 📦</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+              SaaS pelacakan bahan baku halal rantai pasok dan otomatisasi pembuatan berkas SJPH standar BPJPH untuk UMKM makanan/minuman.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
+            <span class="text-xs font-semibold text-emerald-600">Integrasi Swing5D</span>
+            <a href="https://halaltrace.provider.my.id" target="_blank" class="text-indigo-600 hover:text-indigo-500 text-xs font-bold transition">Kunjungi Situs →</a>
+          </div>
+        </div>
+
+        <!-- KuisGuru AI -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col justify-between hover:border-indigo-300 hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded uppercase">E-Learning AI</span>
+              <span class="text-xs font-semibold text-slate-400">Port: 5015</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">KuisGuru AI 📝</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+              Generator kuis interaktif cerdas bagi guru sekolah berbasis AI. Membantu pembuatan bank soal instan sesuai modul ajar.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
+            <span class="text-xs font-semibold text-emerald-600">Integrasi Swing5D</span>
+            <a href="https://kuisguru.provider.my.id" target="_blank" class="text-indigo-600 hover:text-indigo-500 text-xs font-bold transition">Kunjungi Situs →</a>
+          </div>
+        </div>
+
+        <!-- RaporInformatika AI -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col justify-between hover:border-indigo-300 hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="text-xs font-bold text-sky-600 bg-sky-50 px-2 py-0.5 rounded uppercase">Administrasi Guru</span>
+              <span class="text-xs font-semibold text-slate-400">Port: 5014</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">RaporInformatika AI 🎓</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+              Asisten penyusunan rapor siswa otomatis berdasar nilai harian, absensi, dan capaian kompetensi informatika sekolah.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
+            <span class="text-xs font-semibold text-emerald-600">Integrasi Swing5D</span>
+            <a href="https://raporinformatika.provider.my.id" target="_blank" class="text-indigo-600 hover:text-indigo-500 text-xs font-bold transition">Kunjungi Situs →</a>
+          </div>
+        </div>
+
+        <!-- Aegis Quant (AQ) -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col justify-between hover:border-indigo-300 hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded uppercase">FinTech</span>
+              <span class="text-xs font-semibold text-slate-400">Port: 5016</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Aegis Quant (AQ) 📈</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+              Kalkulator analisis pasar modal dan filter instrumen investasi cerdas berbasis parameter teknikal yfinance dan RSI(2).
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
+            <span class="text-xs font-semibold text-slate-400">Decision Tool</span>
+            <a href="https://aq.provider.my.id" target="_blank" class="text-indigo-600 hover:text-indigo-500 text-xs font-bold transition">Kunjungi Situs →</a>
+          </div>
+        </div>
+
+        <!-- NaturaTax Engine -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col justify-between hover:border-indigo-300 hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-start mb-4">
+              <span class="text-xs font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded uppercase">B2B HR Pajak</span>
+              <span class="text-xs font-semibold text-slate-400">Port: 5006</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">NaturaTax Engine 💵</h3>
+            <p class="text-slate-500 text-xs mt-2 leading-relaxed">
+              Sistem kalkulasi pajak natura korporasi (kenikmatan non-tunai) otomatis sesuai kepatuhan CoreTax terbaru.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
+            <span class="text-xs font-semibold text-emerald-600">Integrasi Swing5D</span>
+            <a href="https://naturatax.provider.my.id" target="_blank" class="text-indigo-600 hover:text-indigo-500 text-xs font-bold transition">Kunjungi Situs →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Jadwal Mengajar Section -->
+    <section id="jadwal" class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+      <div class="md:col-span-1 border-l-4 border-indigo-600 pl-4">
+        <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">Jadwal Mengajar</h2>
+        <p class="text-sm text-slate-500 mt-1">Semester 1 Tahun Pelajaran 2026/2027.</p>
+        <div class="mt-6 space-y-2 text-xs text-slate-500">
+          <p>🎒 <strong>Mata Pelajaran:</strong> Informatika</p>
+          <p>🏫 <strong>Total Jam Kerja:</strong> 18 JP / minggu</p>
+          <p>⏰ <strong>Durasi:</strong> 1 JP = 40 Menit</p>
+        </div>
+      </div>
+      <div class="md:col-span-2 bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-900 text-white uppercase text-[10px] font-bold tracking-wider">
+                <th class="py-3 px-4">Hari</th>
+                <th class="py-3 px-4">Kelas</th>
+                <th class="py-3 px-4">Waktu (WIB)</th>
+                <th class="py-3 px-4">Keterangan</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold">Senin</td>
+                <td class="py-3 px-4">7B, 7F</td>
+                <td class="py-3 px-4">08.40 – 10.00 (7B)<br>10.30 – 11.50 (7F)</td>
+                <td class="py-3 px-4 text-xs text-slate-500">Reguler</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold">Selasa</td>
+                <td class="py-3 px-4">7E, 7A</td>
+                <td class="py-3 px-4">08.40 – 10.00 (7E)<br>11.50 – 13.10 (7A)</td>
+                <td class="py-3 px-4 text-xs text-slate-500">Reguler</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold">Rabu</td>
+                <td class="py-3 px-4">-</td>
+                <td class="py-3 px-4">-</td>
+                <td class="py-3 px-4 text-xs text-slate-400 italic">Tidak ada jam mengajar reguler</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold">Kamis</td>
+                <td class="py-3 px-4">7C, 8A</td>
+                <td class="py-3 px-4">08.40 – 10.00 (7C)<br>10.30 – 11.50 (8A)</td>
+                <td class="py-3 px-4 text-xs text-slate-500">Reguler</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold">Jumat</td>
+                <td class="py-3 px-4">8C</td>
+                <td class="py-3 px-4">08.00 – 09.20 (8C)</td>
+                <td class="py-3 px-4 text-xs text-slate-500">Jumat Asri (07.00 - 08.00)</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold">Sabtu</td>
+                <td class="py-3 px-4">7D, 8B</td>
+                <td class="py-3 px-4">08.00 – 09.20 (7D)<br>09.20 – 11.00 (8B)</td>
+                <td class="py-3 px-4 text-xs text-slate-500">Pramuka (07.00 - 08.00)<br>8B istirahat 10.00-10.20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="bg-slate-900 text-white rounded-2xl p-8 md:p-12 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(99,102,241,0.15),transparent_60%)]"></div>
+      <div class="relative z-10 max-w-3xl space-y-6">
+        <h2 class="text-2xl font-extrabold tracking-tight">Hubungi Saya</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Tertarik dengan sistem SaaS yang saya buat atau ingin berdiskusi seputar materi kurikulum Informatika SMP? Silakan hubungi saya melalui jalur berikut.
+        </p>
+        <div class="flex flex-wrap gap-6 text-sm text-indigo-200">
+          <span class="flex items-center gap-2">📧 masbudiyono@gmail.com</span>
+          <span class="flex items-center gap-2">🌐 masbudiyono.github.io</span>
+          <span class="flex items-center gap-2">🐱 github.com/masbudiyono</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-950 text-slate-500 text-xs py-8 text-center border-t border-slate-900">
+    <div class="max-w-6xl mx-auto px-6 space-y-2">
+      <p>&copy; 2026 Budi Yono. All rights reserved.</p>
+      <p>Situs ini di-host sepenuhnya di GitHub Pages.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
